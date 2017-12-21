@@ -11,7 +11,7 @@
 <br/>
 <form action="/menu/remove-item" method="post"   th:object="${form}">
     <div class="form-group">
-        <label th:for="cheeseId">Add Item</label>
+        <label th:for="cheeseId">Remove Item</label>
         <select name="cheeseId">
             <option th:each="cheese : *{cheeses}"
                     th:text="${cheese.name}"
